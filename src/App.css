@@ -1,3 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 3px 1px 1px #3743a4, 2px 2px 1px #3743a4, 4px 2px 1px #3743a4,
+  3px 3px 1px #3743a4, 5px 3px 1px #3743a4, 4px 4px 1px #3743a4;
+}
+
+
 .App {
   text-align: center;
 }
@@ -34,5 +48,72 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.header {
+  background-image: url(./assets/space_aesthetic-wallpaper-1280x960.jpg);
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-description {
+  align-items: center;
+  padding: 180px;
+  box-sizing: content-box;
+}
+
+.header-description p {
+  font-size: 36px;
+  /* font-weight: 500; */
+  text-shadow: 2px 1px 1px #263b9c, 2px 1px 1px #3743a4, 4px 2px 1px #9d97e4;
+}
+
+.navigation {
+  font-size: 28px;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+
+/* Button Styling */
+.btn {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  align-items: flex-end;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+}
+
+.btn:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0 2.6rem;
   }
 }
