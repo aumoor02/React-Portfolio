@@ -1,10 +1,10 @@
 import React from "react";
-import {Nav, Navbar, NavItem, NavLink} from "reactstrap";
+import { Nav, Navbar, NavItem, NavLink } from "reactstrap";
 
 function Navigation() {
     return (
         <div className="navigation">
-            <Navbar >
+            <Navbar>
                 <Nav>
                     <NavItem>
                         <NavLink href="/">Home</NavLink>
