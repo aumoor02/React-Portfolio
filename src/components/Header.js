@@ -12,7 +12,7 @@ function Header() {
                     to bring web pages to life!
                 </p>
             </div>
-            <button className="btn">Learn More</button>
+            <button className="header-btn">Learn More</button>
         </div>
     );
 }

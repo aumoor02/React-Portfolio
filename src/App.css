@@ -13,8 +13,6 @@ h1 {
 }
 
 
-
-
 .about-container {
     background-color: #28225d;
     color: white;
@@ -96,7 +94,7 @@ h1 {
 }
 
 /* Button Styling */
-.btn {
+.header-btn {
     background-image: linear-gradient(
         92.88deg,
         #455eb5 9.16%,
@@ -123,17 +121,20 @@ h1 {
     margin-bottom: 200px;
 }
 
-.btn:hover {
+.header-btn:hover {
     box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
     transition-duration: 0.1s;
 }
 
 @media (min-width: 768px) {
-    .btn {
+    .header-btn {
         padding: 0 2.6rem;
     }
 }
 
+
+
+/* Skills */
 .skills-container {
   background-color: #161c38;
   color: white;
@@ -153,4 +154,35 @@ h1 {
 
 .skill {
   flex-basis: 200px;
+}
+
+
+
+/* Projects */
+.project-container {
+    background-color: #28225d;
+    color: white;
+    height: 75vh;
+}
+
+
+/* Contact */
+.contact-container {
+    background-color: #161c38;
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    background-color: #28225d;
+    color: black;
+    height: 20vh;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

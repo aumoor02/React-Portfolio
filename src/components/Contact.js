@@ -12,7 +12,7 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div className="contact-container">
             <h2>Contact</h2>
             <Formik
                 initialValues={{
@@ -26,10 +26,10 @@ const Contact = () => {
             >
                 <Form>
                     <FormGroup row>
-                        <Label htmlFor="firstName" md="2">
+                        <Label htmlFor="firstName">
                             First Name
                         </Label>
-                        <Col md="10">
+                        <Col>
                             <Field
                                 className="form-control"
                                 name="firstName"
@@ -38,10 +38,10 @@ const Contact = () => {
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label htmlFor="lastName" md="2">
+                        <Label htmlFor="lastName">
                             Last Name
                         </Label>
-                        <Col md="10">
+                        <Col>
                             <Field
                                 className="form-control"
                                 name="lastName"
@@ -50,10 +50,10 @@ const Contact = () => {
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label htmlFor="phoneNum" md="2">
+                        <Label htmlFor="phoneNum">
                             Phone
                         </Label>
-                        <Col md="10">
+                        <Col>
                             <Field
                                 className="form-control"
                                 name="phoneNum"
@@ -62,10 +62,10 @@ const Contact = () => {
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label htmlFor="email" md="2">
+                        <Label htmlFor="email">
                             Email
                         </Label>
-                        <Col md="10">
+                        <Col>
                             <Field
                                 className="form-control"
                                 name="email"
@@ -74,20 +74,20 @@ const Contact = () => {
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label htmlFor="message" md="2">
+                        <Label htmlFor="message">
                             Message
                         </Label>
-                        <Col md="10">
+                        <Col>
                             <Field
                                 className="form-control"
                                 name="message"
                                 as="textarea"
-                                rows="12"
+                                rows="3"
                             />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Col md={{ size: 10, offset: 2 }}>
+                        <Col>
                             <Button type="submit">
                                 Send
                             </Button>
