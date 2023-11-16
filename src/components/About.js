@@ -16,6 +16,7 @@ function About() {
                     with other passionate individuals, and I can't wait to bring
                     my leadership skills to your organization.
                 </p>
+                <button className="about-btn">Download My Resumé</button>
             </div>
         </div>
     );

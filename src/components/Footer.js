@@ -6,7 +6,7 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     return (
-        <div className="footer-container">
+        <>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/austinmoore93/">
@@ -42,13 +42,13 @@ function Footer() {
                             <FontAwesomeIcon
                                 icon={faGoogle}
                                 size="2xl"
-                                style={{ color: "black", backgroundColor: "white" }}
+                                style={{ color: "red", backgroundColor: "white" }}
                             />
                         </i>
                     </a>
                 </li>
             </ul>
-        </div>
+        </>
     );
 }
 

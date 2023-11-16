@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 h1 {
@@ -12,7 +12,6 @@ h1 {
         3px 3px 1px #3743a4, 5px 3px 1px #3743a4, 4px 4px 1px #3743a4;
 }
 
-
 .about-container {
     background-color: #28225d;
     color: white;
@@ -21,17 +20,17 @@ h1 {
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    min-width: 100vw;
+    max-width: 100vw;
 }
 
 @media (max-width: 576px) {
-  .pricing-container {
-    flex-direction: column;
-  }
+    .pricing-container {
+        flex-direction: column;
+    }
 }
 
 .about-details {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .profile-img {
@@ -55,6 +54,31 @@ h1 {
     padding: 50px 100px;
     line-height: 1.5;
     flex: 1;
+}
+
+.about-btn {
+    background-image: linear-gradient(
+        92.88deg,
+        #455eb5 9.16%,
+        #5643cc 43.89%,
+        #673fd7 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    flex-shrink: 0;
+    align-items: flex-end;
+    font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    margin-bottom: 200px;
 }
 
 .header {
@@ -108,9 +132,7 @@ h1 {
     cursor: pointer;
     flex-shrink: 0;
     align-items: flex-end;
-    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
+    font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 18px;
     font-weight: 500;
     height: 4rem;
@@ -132,31 +154,37 @@ h1 {
     }
 }
 
-
-
 /* Skills */
 .skills-container {
-  background-color: #161c38;
-  color: white;
-  height: 75vh;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center; 
-  gap: 10px;
+    background-color: #161c38;
+    color: white;
+    height: 75vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.skills-container h2 {
-  align-self: flex-start;
+.skills-container > h2 {
+    font-size: 3rem;
+}
+
+.skills-container h2:hover {
+    color: #263b9c;
+}
+
+.skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 20px;
 }
 
 .skill {
-  flex-basis: 200px;
+    flex: 1 1 25%;
 }
-
-
 
 /* Projects */
 .project-container {
@@ -165,24 +193,24 @@ h1 {
     height: 75vh;
 }
 
-
 /* Contact */
 .contact-container {
     background-color: #161c38;
     color: white;
 }
 
-
 /* Footer */
 footer {
     background-color: #28225d;
     color: black;
     height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
