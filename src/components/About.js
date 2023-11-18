@@ -5,7 +5,7 @@ function About() {
     return (
         <div className="about-container">
             <img className="profile-img" src={Profile} alt="Austin Moore" />
-            <div className="about-detals">
+            <div className="about-details">
                 <h2 className="section-heading">About Me</h2>
                 <p>
                     I am a Full-Stack Web Developer out of Nebraska who has

@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* border: solid red 1px; */
+    border: solid red 1px;
 }
 
 h1 {
@@ -12,75 +12,13 @@ h1 {
         3px 3px 1px #3743a4, 5px 3px 1px #3743a4, 4px 4px 1px #3743a4;
 }
 
-.about-container {
-    background-color: #28225d;
-    color: white;
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 75vh;
-    max-width: 100vw;
-}
-
 @media (max-width: 576px) {
-    .pricing-container {
-        flex-direction: column;
+    h1 {
+        font-size: 72px;
     }
 }
 
-.about-details {
-    flex-wrap: wrap;
-}
-
-.profile-img {
-    border-radius: 10%;
-    min-height: auto;
-    min-width: 30vh;
-    flex: 1;
-}
-
-.about-container h2 {
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-.about-container h2:hover {
-    color: #263b9c;
-}
-
-.about-container p {
-    font-size: 18px;
-    padding: 50px 100px;
-    line-height: 1.5;
-    flex: 1;
-}
-
-.about-btn {
-    background-image: linear-gradient(
-        92.88deg,
-        #455eb5 9.16%,
-        #5643cc 43.89%,
-        #673fd7 64.72%
-    );
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    flex-shrink: 0;
-    align-items: flex-end;
-    font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    height: 4rem;
-    padding: 0 1.6rem;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all 0.5s;
-    margin-bottom: 200px;
-}
-
+/* Header Section */
 .header {
     background-image: url(./assets/space_aesthetic-wallpaper-1280x960.jpg);
     background-repeat: none;
@@ -101,10 +39,22 @@ h1 {
     box-sizing: content-box;
 }
 
+@media (max-width: 576px) {
+    .header-description {
+        padding: 100px;
+    }
+}
+
 .header-description p {
     font-size: 36px;
     /* font-weight: 500; */
     text-shadow: 2px 1px 1px #263b9c, 2px 1px 1px #3743a4, 4px 2px 1px #9d97e4;
+}
+
+@media (max-width: 576px) {
+    .header-description p {
+        font-size: 24px;
+    }
 }
 
 .navigation {
@@ -148,9 +98,100 @@ h1 {
     transition-duration: 0.1s;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 576px) {
     .header-btn {
-        padding: 0 2.6rem;
+        padding: 0 1.6rem;
+        margin-bottom: 100px;
+    }
+}
+
+/* About Section */
+.about-container {
+    background-color: #28225d;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    min-height: 75vh;
+    max-width: 100vw;
+    gap: 20px;
+}
+
+@media (max-width: 576px) {
+    .about-container {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 10%;
+    max-height: 50vh;
+    min-width: 30vh;
+    flex: 1;
+    align-self: center;
+    margin-left: 20px;
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        margin: 0 auto;
+    }
+}
+
+.about-container h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.about-container h2:hover {
+    color: #263b9c;
+}
+
+.about-container p {
+    font-size: 18px;
+    padding: 50px 50px;
+    line-height: 1.5;
+}
+
+.about-btn {
+    background-image: linear-gradient(
+        92.88deg,
+        #455eb5 9.16%,
+        #5643cc 43.89%,
+        #673fd7 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 0.75rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+}
+
+.about-btn:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+    .about-btn {
+        padding: 0 1.6rem;
     }
 }
 
@@ -164,7 +205,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 }
 
 .skills-container > h2 {
@@ -184,6 +224,11 @@ h1 {
 
 .skill {
     flex: 1 1 25%;
+}
+
+.programming-img {
+    height: 200px;
+    width: 225px;
 }
 
 /* Projects */

@@ -1,4 +1,6 @@
 import React from "react";
+import ProgrammingSkills from "../assets/programming-skills.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
@@ -145,6 +147,11 @@ function Skills() {
                     </i>
                 </div>
             </div>
+            <img
+                className="programming-img"
+                src={ProgrammingSkills}
+                alt="Computer/Programming"
+            />
         </div>
     );
 }
