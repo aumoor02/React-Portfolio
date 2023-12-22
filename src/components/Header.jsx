@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 function Header({scrollRef}) {
     const scrollDown = (e) => {
@@ -18,7 +19,10 @@ function Header({scrollRef}) {
                     to bring web pages to life!
                 </p>
             </div>
-            <button onClick={() => scrollDown(scrollRef)} className="header-btn">Learn More</button>
+            <button onClick={() => scrollDown(scrollRef)} className="header-btn">
+                Learn More
+                <div><KeyboardDoubleArrowDownIcon/></div>
+            </button>
         </div>
     );
 }
