@@ -8,7 +8,6 @@ function Footer() {
             <ul>
                 <li>
                     <SocialIcon url="https://www.linkedin.com/in/austinmoore93/" />
-
                 </li>
                 <li>
                     <SocialIcon url="https://github.com/aumoor02" />
