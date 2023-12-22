@@ -1,22 +1,26 @@
+import {useRef} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+
 function App() {
+    const scrollRef = useRef();
+
     return (
         <div>
             <header>
-                <Header />
+                <Header scrollRef={scrollRef} />
             </header>
-            <About />
+            <div ref={scrollRef}>
+                <About />
+            </div>
             <Skills />
             <Projects />
-            <Contact />
             <footer>
                 <Footer />
             </footer>

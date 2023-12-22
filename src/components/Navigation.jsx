@@ -1,7 +1,13 @@
 import React from "react";
 import { Nav, Navbar, NavItem, NavLink } from "reactstrap";
 
-function Navigation() {
+function Navigation({scrollRef}) {
+    const scrollDown = (e) => {
+        e.current.scrollIntoView({
+            behavior: "smooth"
+        });
+    };
+    
     return (
         <div className="navigation">
             <Navbar>
@@ -10,7 +16,7 @@ function Navigation() {
                         <NavLink href="/">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>About</NavLink>
+                        <NavLink onClick={() => scrollDown(scrollRef)}>About</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink>Skills</NavLink>

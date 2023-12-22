@@ -1,10 +1,16 @@
 import React from "react";
 import Navigation from "./Navigation";
 
-function Header() {
+function Header({scrollRef}) {
+    const scrollDown = (e) => {
+        e.current.scrollIntoView({
+            behavior: "smooth"
+        });
+    };
+
     return (
         <div className="header">
-            <Navigation />
+            <Navigation scrollRef={scrollRef}/>
             <div className="header-description">
                 <h1>Austin Moore</h1>
                 <p>
@@ -12,7 +18,7 @@ function Header() {
                     to bring web pages to life!
                 </p>
             </div>
-            <button className="header-btn">Learn More</button>
+            <button onClick={() => scrollDown(scrollRef)} className="header-btn">Learn More</button>
         </div>
     );
 }
