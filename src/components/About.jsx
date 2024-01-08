@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../assets/Pikes-Peak-Profile.jpg";
+import Profile from "../assets/Pikes-Peak-Profile-Small.jpg";
 
 function About() {
   const onDownloadResume = () => {
