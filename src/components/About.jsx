@@ -1,18 +1,19 @@
 import React from "react";
 import Profile from "../assets/Pikes-Peak-Profile-Small.jpg";
+import Resume from "../assets/Austin-Moore-Resume.pdf";
 
 function About() {
-  const onDownloadResume = () => {
-    fetch("../assets/Austin-Moore-Resume.pdf").then((res) => {
-      res.blob().then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "Austin-Moore-Resume.pdf";
-        a.click();
-      });
-    });
-  };
+  // const onDownloadResume = () => {
+  //   fetch("../assets/Austin-Moore-Resume.pdf").then((res) => {
+  //     res.blob().then((blob) => {
+  //       const url = window.URL.createObjectURL(blob);
+  //       const a = document.createElement("a");
+  //       a.href = url;
+  //       a.download = "Austin-Moore-Resume.pdf";
+  //       a.click();
+  //     });
+  //   });
+  // };
 
   return (
     <div className="about-container">
@@ -27,9 +28,11 @@ function About() {
           team with other passionate individuals, and I can't wait to bring my
           leadership skills to your organization.
         </p>
-        <button className="about-btn" onClick={onDownloadResume}>
-          Download My Resumé
-        </button>
+        <a href={Resume} download>
+          <button className="about-btn">
+            Download My Resumé
+          </button>
+        </a>
       </div>
     </div>
   );
